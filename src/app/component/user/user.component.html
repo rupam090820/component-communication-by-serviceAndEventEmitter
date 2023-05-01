@@ -1,0 +1,9 @@
+
+<!-- display only name and job which information getting from services-->
+<div class="container" *ngFor="let a of user">
+
+    <div>NAME:-- {{a.name}}</div>
+    <div>JOB TYPEE:- {{a.job}}</div>
+    <button (click)="ShowDetails(a)" class="btn btn-danger btn-sm">Details</button>
+
+</div>

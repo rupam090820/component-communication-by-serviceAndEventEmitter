@@ -1,0 +1,24 @@
+<table class="table" *ngIf="recivedUserDetails != undefined">
+    <thead>
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">job</th>
+        <th scope="col">gender</th>
+        <th scope="col">country</th>
+        <th scope="col">age</th>
+        <th scope="col">avatar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{recivedUserDetails.name}}</th>
+        <th scope="row">{{recivedUserDetails.job}}</th>
+        <th scope="row">{{recivedUserDetails.gender}}</th>
+        <th scope="row">{{recivedUserDetails.country}}</th>
+        <th scope="row">{{recivedUserDetails.age}}</th>
+        <th ><img [src]="recivedUserDetails.avatar" height="120px" width="120px"></th>
+      </tr>
+   
+    
+    </tbody>
+  </table>
